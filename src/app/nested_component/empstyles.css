@@ -1,3 +1,9 @@
 table, td{
     background-color: greenyellow;
 }
+.borderclass{
+    border: 2px solid black;
+}
+.italicclass{
+    font-style: italic;
+}

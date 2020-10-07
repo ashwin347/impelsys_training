@@ -1,5 +1,6 @@
-<h1> Table </h1>
-<table>
+<div [ngClass]='multiple_css()'> This Text is an example of class binding </div>
+<table [class]='css_class'>
+    <tr ><th attr.colspan='{{headingspan}}' [class.italicclass]='header_italics'>Employee detail</th></tr>
     <tr>
         <td>first name</td>
         <td>{{firstname}}</td>
@@ -14,4 +15,13 @@
         <td>age</td>
         <td>{{age}}</td>
     </tr>
+    <tr *ngIf='show_number'>
+        <td>phone</td>
+        <td>{{phone}}</td>
+    </tr>
 </table>
+<br>
+<button (click)="number_toggle()" >{{show_number?'hide':'show'}} Phone number</button>
+<div [style.font-weight]="isbold ? 'bold' : 'normal'">This text is an example of style binding</div>
+<div [ngStyle]='add_styles()'> this text is another example of style binding</div>
+<button (click)= "show_alert()">click me</button>
