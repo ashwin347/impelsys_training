@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "foxiton-documentation": {
+      "hosting": {
+        "firstangularproject": [
+          "foxiton-documentation"
+        ]
+      }
+    }
+  }
+}
